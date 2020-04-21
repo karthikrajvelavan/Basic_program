@@ -5,7 +5,7 @@ class Nqueens
 static int n;
 static int arr[][];
     
-    static void printsol()
+    static void printsol()                                      //printing the solution
     {
         for(int i=0;i<n;i++){
      	for(int j=0;j<n;j++)
@@ -17,7 +17,7 @@ static int arr[][];
      	}	
     }
 
-    static Boolean isafe(int arr[][],int row,int col)
+    static Boolean isafe(int arr[][],int row,int col)            //checking row and diagonals
     {
         
         for(int j=0;j<col;j++)
@@ -35,7 +35,7 @@ static int arr[][];
         return true;
     }
 
-    static Boolean solve(int arr[][],int col)
+    static Boolean solve(int arr[][],int col)                    //checking all posibilities through recursive
     { 
       if(col>=n){
 
@@ -66,8 +66,15 @@ static int arr[][];
     System.out.println("Not Formed");
     else
     System.out.println("Formed");
-
-     
-
-	}
+    }
 }
+
+output:
+4
+- - Q -
+Q - - -
+- - - Q
+- Q - -
+Formed
+
+
